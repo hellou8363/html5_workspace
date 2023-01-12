@@ -7,3 +7,6 @@
   - Live Server(Ritwick Dey)
   - Preview on Web Server(YuichiNukiyama)
   - Live Preview(Microsoft)
+- Tag 연습
+  - HTML5 기본 태그
+  - <meta>, <p>, <a>
