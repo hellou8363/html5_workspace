@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>목록</title>
+  </head>
+  <body>
+    <!-- 정의형 목록 -->
+    <h2>정의형 목록</h2>
+    <section>
+      <!-- Definition List의 시작 -->
+      <dl>
+        <dt>첫 번째 아이템</dt>
+        <dd>HTML5</dd>
+        <dd>HTML6</dd>
+        <dd>HTML7</dd>
+        <dt>두 번째 아이템</dt>
+        <dd><img src="http://picsum.photos/200/100" /></dd>
+        <dd>CSS4</dd>
+        <dd>CSS5</dd>
+        <dt>세 번째 아이템</dt>
+        <dd>JavaScript1</dd>
+        <dd>JavaScript2</dd>
+        <dd>JavaScript3</dd>
+      </dl>
+    </section>
+    <h2>Table</h2>
+    <section>
+      <article>
+        <table border="1" style="width: 50%">
+          <tr>
+            <th>이름</th>
+            <!-- Table Header => th -->
+            <th>점수</th>
+          </tr>
+          <tr>
+            <td>한은혜</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>김개똥</td>
+            <td>99</td>
+          </tr>
+          <tr>
+            <td>이말똥</td>
+            <td>67</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <h2>Table</h2>
+    <section>
+      <article>
+        <table border="0" style="width: 50%">
+          <tr>
+            <th>이름</th>
+            <th>점수</th>
+          </tr>
+          <tr>
+            <td>한은혜</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>김개똥</td>
+            <td>99</td>
+          </tr>
+          <tr>
+            <td>이말똥</td>
+            <td>67</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <h2>Table head, body, foot</h2>
+    <section>
+      <table border="1" style="width: 50%;">
+        <caption>
+          테이블 제목
+        </caption>
+        <thead>
+          <tr>
+            <td>1열</td>
+            <td>2열</td>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- head, body, foot을 지정하지 않으면 검색봇은 모두 body로 인식함 -->
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <h2>Table 병합</h2>
+    <article>
+      <table border="1" style="width: 50%;">
+        <tr>
+          <td>가</td>
+          <td>나</td>
+          <td rowspan="3">다</td><!-- rowspan: 행 병합-->
+        </tr>
+        <tr>
+          <td colspan=" 2">라</td>
+        </tr>
+        <tr>
+          <td>마</td>
+          <td>바</td>
+        </tr>
+      </table>
+    </article>
+  </body>
+</html>
