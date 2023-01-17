@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>텍스트 공간 입력 양식</title>
+  </head>
+  <body>
+    <form>
+      <!-- textarea영역에 주석을 넣으면 그대로 출력됨 -->
+      <!-- 사이즈 조절 가능 -->
+      <textarea cols="30" rows="5">
+      텍스트를 작성하는 공간입니다.
+    </textarea
+      >
+      <p></p>
+      <input type="submit" value="전송" />
+      <input type="reset" value="다시작성" />
+    </form>
+    <hr>
+    <form>
+      <fieldset><!-- input 태그를 묶어줌 -->
+        <legend>개인 정보 입력</legend>
+        <P>이름: <input type="text" name="name"></P>
+        <P>학교: <input type="text" name="school"></P>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+      </fieldset>
+    </form>
+  </body>
+</html>

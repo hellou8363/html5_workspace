@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 태그 사용 - Post 방식</title>
+  </head>
+  <body>
+    <h2>POST 방식으로 데이터 전송</h2>
+    <!-- HTTP method: GET/POST/... -->
+    <!-- 각각의 form 태그가 하나의 양식
+         여러 개의 양식을 작성할 경우, name을 Unique하게 작성할 것 -->
+    <!-- name: 값을 저장하고 있는 이름(backend에서 name으로 값을 사용)
+         action: 전송할 위치 지정, 위치값을 지정하지 않으면 자기자신에게 전송 / 받음
+         method: form data를 어떤 방식으로 전송할지 지정 -->
+    <!-- GET: 
+         POST: 
+    -->
+    <form name="form1" action="http://localhost:7070" method="post"><!-- body(payload): name=hello&major=1234 -->
+      <p>이름: <input type="text" name="name" placeholder="" /></p><!-- 여기서는 value를 하드코딩 하지 않음: 사용자에게 값을 입력 받으므로 -->
+      <p>주민번호: <input type="text" name="major" /></p><!-- placeholder: 사용자에게 입력해야 할 값을 알려주는 용도(희미한 글자로 보여줌) -->
+      <p></p>
+      <!-- input의 value: 각 양식마다 값을 하드코딩할 때 사용 -->
+      <input type="submit" value="전송" /><!-- form에 작성된 데이터를 전송 -->
+      <input type="reset" value="다시작성" /><!-- input에 입력된 값 초기화 -->
+    </form>
+
+    <!-- 보안에 민감한 정보는 GET 방식으로 보내지 않으며
+         최대 455 문자까지 전송가능하다.
+    -->
+    <form name="form2" action="http://localhost:7070" method="get"><!-- Request URL: GET /?name=hello&major=1234 HTTP/1.1 -->
+      <p>이름: <input type="text" name="name" /></p>
+      <p>주민번호: <input type="text" name="major" /></p>
+      <p></p>
+      <input type="submit" value="전송" /><!-- form에 작성된 데이터를 전송 -->
+      <input type="reset" value="다시작성" /><!-- input에 입력된 값 초기화 -->
+    </form>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문자 입력 양식</title>
+  </head>
+  <body>
+    <form>
+      <!-- name이 있어야 전송 파라미터가 생김 -->
+      <p>이름: <input type="text" name="name" size="10" /></p>
+      <!-- size: 10 => 10개 문자(영문자 기준) 입력할 정도의 사이즈 -->
+      <p>학번: <input type="text" name="studentNo" size="10" value="" /></p>
+      <p>학과: <input type="text" name="school" /></p>
+      <!-- size를 정하지 않으면 기본 사이즈 -->
+      <p></p>
+      <input type="submit" value="전송" />
+      <input type="reset" value="다시작성" />
+      <hr />
+      <form>
+        <!-- required: 필수입력, 입력하지 않으면 submit이 되지 않음 -->
+        <p>ID: <input type="text" required /></p>
+        <p>PW: <input type="password" required /></p>
+        <p></p>
+        <input type="submit" value="전송" />
+        <input type="reset" value="다시작성" />
+      </form>
+    </form>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+      <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+    </svg>
+  </body>
+</html>

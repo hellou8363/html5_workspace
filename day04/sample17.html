@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Tag</title>
+</head>
+<body>
+  <h3>이미지 기본 표현</h3>
+  <img src="http://picsum.photos/id/684/100/122" alt="이미지가 표시되지 않습니다.">
+  <h3>이미지에 설명 추가 & 오른쪽 정렬</h3>
+  <img src="http://picsum.photos/id/684/100/122" title="HTML5 로고 이미지" style="float: right;">
+  <h3>이미지의 크기를 픽셀 단위로 조정</h3>
+  <img src="https://picsum.photos/id/684/100/122" style="width: 50px;height: 60;">
+  <h3>이미지의 크기를 % 단위로 조정</h3>
+  <img src="https://picsum.photos/id/684/100/122" width="50%" height="40%">
+  <h3>이미지를 클릭하세요.</h3>
+  <a href="http://www.w3.org" target="_blank"><!-- 이미지는 보통 4:3 비율 -->
+    <img src="https://picsum.photos/id/684/600/400" alt="W3C 홈페이지로 이동">
+  </a>
+  <h3>이미지에 제목 추가하기</h3>
+  <figure><!-- figure: 독립적인 콘텐츠를 표현 -->
+    <img src="https://picsum.photos/id/684/100/122" alt="Random Image" title="random">
+    <figcaption>[그림1] Random Image</figcaption><!-- 이미지의 제목 -->
+  </figure>
+  <figure>
+    <figcaption>[그림2] Random Image</figcaption><!-- 이미지의 제목 -->
+    <img src="https://picsum.photos/id/684/100/122" alt="Random Image" title="random">
+  </figure>
+</body>
+</html>

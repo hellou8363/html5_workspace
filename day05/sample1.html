@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Play</title>
+</head>
+<body>
+  <h3>오디오 자동 재생</h3>
+  <!-- controls: 오디오 제어판, loop: 반복 재생, autoplay: 렌더링 됐을 때 자동 재생, 
+    preload: 미리 브라우저에 로딩(사용자가 버튼을 누르면 바로 재생할 수 있도록) 
+    ** autoplay는 현재 지원되지 않음 **
+    ** loop를 사용하는 경우는 거의 없음 **
+  -->
+  <audio src="./audio/eagle.mp3" controls loop autoplay preload></audio>
+  <h3>오디오 수동 재생</h3>
+  <audio src="./audio/eagle.mp3" controls></audio>
+  <h3>오디오 다중 재생</h3>
+  <audio controls>
+    <!-- type: 오디오 형식(mp3, wav, ogg) 
+               ogg는 Safari에서만 미지원
+         audio/mpeg => mp3, MIME type
+    -->
+    <source src="./audio/eagle1.mp3" type="audio/mpeg">
+    <!-- 오디오를 정상적으로 재생할 수 없을 때 나타날 메시지 -->
+    오디오 파일을 재생할 수 없습니다.
+  </audio>
+</body>
+</html>
