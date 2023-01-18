@@ -40,7 +40,7 @@ audio/mpeg => mp3, MIME type
 
 \
 \
-**form 태그 사용**  
+**form / input 태그 사용**  
 ```
 <form name="form1" action="http://localhost:8080" method="post">
   <input type="text" name="name" size="10" placeholder="이름을 입력해주세요." required>
@@ -77,3 +77,62 @@ name값을 Unique하게 작성해야 한다(backend에서 name값을 사용).
 - ```<fieldset>```: input 태그들을 묶어줌
 - ```<legend>```: input그룹의 이름
 
+\
+\
+**텍스트 공간 입력 양식**  
+```
+<textarea cols="30" rows="5">
+  텍스트를 작성하는 공간입니다.
+</textarea>
+```  
+textarea영역에 주석을 넣으면 그대로 출력되며 텍스트 공간은 사이즈 조절이 가능하다.  
+- cols: 열 사이즈
+- rows: 행 사이즈
+
+\
+\
+**form - Radio Button**  
+각 radio group은 name(전송파라미터값)이 같아야 하며, 값은 하나만 선택 가능하다.  
+checked: 기본으로 선택되는 값  
+```
+<form>
+  <h3>당신의 성별은 무엇입니까?</h3>
+  <input type="radio" name="sex" value="male" checked />남자
+  <input type="radio" name="sex" value="female" />여자
+</form>
+```   
+\
+\
+**form - Check Box**  
+여러 개의 값 선택 가능  
+```
+<form>
+  <input type="checkbox" name="subject" value="HTML5">HTML5<br>
+  <input type="checkbox" name="subject" value="CSS3">CSS3<br>
+  <input type="checkbox" name="subject" value="JavaScript">JavaScript<br>
+  <input type="checkbox" name="subject" value="Jquery">Jquery
+</form>
+```  
+\
+\
+**Button 태그 사용**  
+일반적인 button으로 사용하기 위해서는 type을 button으로 지정해줘야 한다.  
+(지정하지 않으면 submit과 동일, form태그에 있는 모든 값이 backend로 전송됨).  
+실무에서는 이미지 버튼을 많이 사용하며, name속성이 없으면 value속성값이 있어도 전송되지 않는다.  
+```<button type="button"><img src="./img/html.bmp"></button>```
+\
+\
+**Select Box**  
+```
+<select name="subject" multiple>
+  <option value="1" selected>HTML5</option>
+  <option value="2">CSS3</option>
+  <option value="3">JavaScript</option>
+  <option value="4">Jquery</option>
+</select>
+```  
+값 선택을 하나만 할 수 있으며, size를 지정하면 지정한 만큼만 보이고  
+나머지는 위, 아래로 이동하면서 볼 수 있다.  
+value: 실제 전송되는 값  
+multiple: 여러 개의 속성을 선택할 수 있음  
+selected: 기본 항목 선택 지정  

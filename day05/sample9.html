@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Box</title>
+</head>
+<body>
+  <form>
+    <!-- select에 size를 지정하면 지정한 만큼만 값이 보이고 위, 아래로 다른 값을 볼 수 있다. -->
+    <select name="subject" multiple>
+      <option value="1" selected>HTML5</option>
+      <option value="2">CSS3</option>
+      <option value="3">JavaScript</option>
+      <option value="4">Jquery</option>
+    </select>
+  </form>
+  <hr>
+  <form>
+    <label>전공분야를 선택하세요.
+      <select name="major" multiple>
+        <optgroup label="computer">
+          <option value="1">Software</option>
+          <option value="2">Robot</option>
+          <option value="3">System</option>
+        </optgroup>
+        <optgroup label="language">
+          <option value="4">Korea</option>
+          <option value="5">English</option>
+          <option value="6">China</option>
+          <option value="7">Germany</option>
+        </optgroup>
+        <optgroup label="business">
+          <option value="8">Service</option>
+          <option value="9">Education</option>
+          <option value="10">Communication</option>
+          <option value="11">Marketing</option>
+        </optgroup>
+      </select>
+      <p></p>
+      <input type="submit" value="선택">
+      <input type="reset" value="다시선택">
+    </label>
+  </form>
+  <hr>
+  <form>
+    생년월일: <input type="text" name="birthday"placeholder="예:1999-01-04">
+    <br><br>
+    <label>전공분야를 입력하세요.
+      <input type="text" name="major"list="majorlist">
+      <datalist id="majorlist">
+        <option value="Software">소프트웨어</option>
+        <option value="Robot">로봇</option>
+        <option value="System">시스템</option>
+        <option value="Service">서비스</option>
+        <option value="Education">교육</option>
+      </datalist>
+      <p></p>
+      <input type="submit" value="완료">
+      <input type="reset" value="취소">
+    </label>
+  </form>
+  <hr>
+  <form>
+    <h3>오늘 날짜 입력</h3>
+    Today: <input type="date" name="today">
+    <h3>프로젝트 수행 기간</h3>
+    From: <input type="date" name="from" min="2016-03-01" max="2016-12-31">
+    To: <input type="date" name="to" min="2018-03-01" max="2018-06-30">
+    <p></p>
+    <input type="submit" value="제출">
+    <input type="reset" value="다시작성">
+  </form>
+</body>
+</html>

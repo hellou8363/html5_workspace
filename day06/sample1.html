@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input example</title>
+  </head>
+  <body>
+    <form>
+      <h3>생일(년/월) 입력</h3>
+      생일: <input type="month" name="birth" />
+      <h3>주간 계획(년/주) 입력</h3>
+      주간 계획: <input type="week" name="weekeend" />
+      <p></p>
+      <input type="submit" value="제출" />
+      <input type="reset" value="다시작성" />
+    </form>
+    <hr />
+    <form>
+      <h3>현재 시간 입력</h3>
+      <input type="time" name="now" />
+      <h3>생일(년, 월, 일, 시간) 입력</h3>
+      <input type="datetime-local" name="bdaytime" />
+      <p></p>
+      <input type="submit" value="제출" />
+      <input type="reset" value="다시작성" />
+    </form>
+    <hr />
+    <form>
+      <h3>원하는 색상을 선택하세요.</h3>
+      <input type="color" name="color_value" />
+      <p></p>
+      <input type="submit" value="선택완료" />
+      <input type="reset" value="다시선택" />
+    </form>
+    <hr />
+    <form>
+      <h3>나이를 입력하세요.</h3>
+      <input type="number" name="age" min="1" max="130" required />
+      <p></p>
+      <input type="submit" value="완료" />
+      <input type="reset" value="초기화" />
+    </form>
+    <hr />
+    <form>
+      <h3>0~100 범위에서 원하는 지점을 선택하세요.</h3>
+      <!-- step: 간격 지정(소수점으로 입력값을 받을 수 있음) -->
+      <input type="range" name="point" min="0" max="100" step="0.1" />
+      <p></p>
+      <input type="submit" value="완료" />
+      <input type="reset" value="초기화" />
+    </form>
+    <hr />
+    <form>
+      <h3>이메일을 정확하게 입력하세요.</h3>
+      <!-- 필수로 문자열@문자열을 받음, 유효한 메일인지는 검사할 수 없으며
+           입력값의 '@'가 전송 시 %로 변경되어 전송된다.
+       -->
+      이메일: <input type="email" name="myemail" />
+      <p></p>
+      <input type="submit" value="제출" />
+      <input type="reset" value="다시작성" />
+    </form>
+    <hr />
+    <form>
+      <h3>홈페이지 주소를 입력하세요.</h3>
+      <!-- 필수로 문자열:를 받음, 유효한 주소인지 확인할 수 없음
+           위 메일과 같이 '@'가 %로 변경되어 전송된다.
+      -->
+      홈페이지: <input type="url" name="myhom" />
+      <p></p>
+      <input type="submit" value="제출" />
+      <input type="reset" value="다시작성" />
+    </form>
+    <hr />
+    <form>
+      <h3>검색어를 입력하세요.</h3>
+      <!-- 입력한 값을 지워주는 X외에 특별한 기능 없음 -->
+      구글검색: <input type="search" name="search" id="" />
+      <p></p>
+      <input type="submit" value="제출" />
+      <input type="reset" value="다시작성" />
+    </form>
+  </body>
+</html>

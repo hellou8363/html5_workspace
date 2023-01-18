@@ -26,6 +26,19 @@
 - 목록 태그
 - 테이블 태그
 
+2023-01-17 (디렉터리명: day05)
+- 오디오 관련 태그
+- 비디오 관련 태그
+- embed 태그
+- object 태그
+- form 태그
+- input 태그
+- 텍스트 공간 입력 양식(textarea)
+- radio button / checkbox / selectbox
+- button 태그
+
+2023-01-18 (디렉터리명: day06)
+- input 태그의 속성(month, time, datetime-local, color, number)
 \
 \
 참고자료
