@@ -1,6 +1,6 @@
 ## 국비 UI 수업  
 2023-01-11  (디렉터리명: day01)  
-- UI 수업 시작
+- **UI 수업 시작(HTML)**
 - 기본 디렉터리 구조 생성
 - VSCode 확장 기능 설치  
 
@@ -18,6 +18,7 @@
 - 기본 태그  
 - 멀티미디어 태그  
 
+\
 2023-01-16 (디렉터리명: day04)
 - 텍스트 관련 태그
 - 하이퍼링크 관련 태그
@@ -26,6 +27,7 @@
 - 목록 태그
 - 테이블 태그
 
+\
 2023-01-17 (디렉터리명: day05)
 - 오디오 관련 태그
 - 비디오 관련 태그
@@ -37,8 +39,16 @@
 - radio button / checkbox / selectbox
 - button 태그
 
+\
 2023-01-18 (디렉터리명: day06)
-- input 태그의 속성(month, time, datetime-local, color, number)
+- input 태그의 타입  
+  (month, time, datetime-local, color, number, range, email, url, search, meter, progress  )
+- input 태그의 속성  
+  (autofocus, readonly, disabled, autocomplete, spellcheck)
+- 공간 분할 태그(div, span)
+- input type="file"
+- **CSS 시작**
+
 \
 \
 참고자료
@@ -50,4 +60,7 @@ https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 https://docs.emmet.io/abbreviations/syntax/  
 \
 **Browser HTML5 Test**  
-http://html5test.com/
+http://html5test.com/  
+\
+**W3schhols**  
+https://www.w3schools.com/
