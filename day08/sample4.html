@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample4</title>
+    <style>
+      /* 3em(16px*3) */
+      h2::first-letter {
+        color: green;
+        font-size: 3em;
+      }
+      p::first-line {
+        color: red;
+        font-size: 2em;
+        text-decoration: underline;
+      }
+      /* content: 가상의 요소 생성
+      (실제 생성X, 가상으로 렌더링) */
+      div::before {
+        content: '-BEFORE-';
+        color: red;
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+      div::after {
+        content: '-AFTER-';
+        color: blue;
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+      input:focus {
+        color: white;
+        background-color: green;
+      }
+      /* 체크박스 자체는 꾸미기 불가 */
+      input:checked {
+        border: 3px solid purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>가상 엘리먼트(요소) 선택자</h2>
+    <p>
+      1st. line<br />
+      2nd. line<br />
+      3rd. line<br />
+    </p>
+    <div>
+      Lorem, ipsum dolor.
+    </div>
+    <form action="">
+      Age: <input type="number" name="age" id="age"><br>
+      isMale: <input type="checkbox" name="gender" id="gender">
+    </form>
+  </body>
+</html>
