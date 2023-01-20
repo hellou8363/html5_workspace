@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 이벤트 가상 클래스 선택자 */
+      /* (1) 아직 한번도 방문하지 않은 새로운 링크에 대해서 스타일 적용 */
+      a:link {
+        color: blue;
+        text-decoration: none; /* 링크의 밑줄 제거 */
+      }
+      /* (2) 링크를 마우스의 버튼으로 클릭한 상태(아직 손은 뗴지 않은 상태)에서
+      적용할 스타일 선언 */
+      a:active {
+        background-color: yellow;
+      }
+      /* (3) 이미 한번이라도 갖다온 링크에 대해서 적용할 스타일을 선언 */
+      a:visited {
+        color: red;
+      }
+      /* (4) <a> 태그 요소위에, 마우스 호버링 시에 적용할 스타일 선언 */
+      a:hover {
+        text-decoration: overline; /* 링크에 윗줄 추가 */
+      }
+      /* (5) class 속성의 값이 d1인 모든 <div> 태그에 대해 스타일 선언 */
+      div.d1 {
+        border: 1px dashed red;
+        width: 400px;
+        padding: 5px;
+      }
+      /* (6) class 속성의 값이 d1인 모든 <div> 태그 위에, 마우스 호버링 이벤트 발생시
+        적용할 스타일 선언 */
+      div.d1:hover {
+        background-color: yellow;
+      }
+      /* (7) class 속성의 값이 d2인 모든 <div> 태그에 대해 적용할 스타일 선언 */
+      div.d2 {
+        border: 1px dashed green;
+        width: 400px;
+        padding: 5px;
+      }
+      /* (8) class 속성의 값이 d2인 모든 <div> 태그 위에, 마우스 호버링 이벤트 발생시
+        적용할 스타일 선언 */
+      div.d2:hover {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- (3) Inline-Level Element는 오로지 같은 Inline-Level Element만 포함 가능 -->
+    <h2>Pseudo Class</h2>
+    <p>
+      <a href="http://www.w3.org" target="_blank">W3C방문</a> :
+      <strong>마우스 이벤트</strong>에 따른 링크의 변화를 잘 보세요.
+    </p>
+    <div class="d1">
+      <h3>가상 클래스 1 영역</h3>
+      <strong>마우스 위치</strong>에 따른 박스의 스타일 변화를 보세요.
+    </div>
+    <div class="d2">
+      <h3>가상 클래스 2 영역</h3>
+      <strong>마우스 위치</strong>에 따른 박스의 스타일 변화를 보세요.
+    </div>
+  </body>
+</html>

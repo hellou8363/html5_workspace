@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 구조적 가상 클래스 선택자 */
+
+      /* 첫 번째 태그의 텍스트 색상(모든 태그에 대해 순번을 센다.) */
+      /* h4:first-child { 
+      color: blue;
+      font-size: 20px;
+    } */
+      /* 첫 번째 태그의 텍스트 색상(지정된 태그에 대해서만 순번을 센다.) */
+      /* h4:first-of-type { 
+      color: blue;
+      font-size: 20px;
+    } */
+      /* 마지막 태그의 텍스트 색상 */
+      /* h4:last-child { 
+      color: red;
+      font-size: 32px;
+    } */
+      /* 마지막 태그의 텍스트 색상(지정된 태그에 대해서만 순번을 센다.) */
+      /* h4:last-of-type { 
+      color: red;
+      font-size: 32px;
+    } */
+      /* 홀수 태그(모든 태그에 대해 순번을 센다.) */
+      /* live server의 script태그도 인식 */
+      /* h4:nth-child(2n+1) { 
+      color: white;
+      background-color: green;
+    } */
+      /* 홀수 태그(지정된 태그에 대해서만 순번을 센다.) */
+      /* 2: 두 번째, 2n: 짝수, 2n+1: 홀수, 3n: 세 번째마다 */
+      /* h4:nth-of-type(2n+1) { 
+      color: white;
+      background-color: green;
+    } */
+      /* 마지막부터 시작해서 순서에 일치하는(뒤에서부터 3번째) 태그에 적용
+    (모든 태그에 대해 순번을 센다.) */
+      /* 2배(32px), 16px == 1em */
+      /* h4:nth-last-child(n) {
+      color: green;
+      font-family: D2Coding;
+      font-size: 2em; 
+    } */
+      /* 마지막부터 시작해서 순서에 일치하는(뒤에서부터 3번째) 태그에 적용
+    (지정된 태그에 대해서만 순번을 센다.) */
+      /* h4:nth-last-of-type(3) {
+      color: green;
+      font-family: D2Coding;
+      font-size: 2em;
+    } */
+      /* 태그가 유일한(하나만 있으면) 타입이면 적용
+    (모든 태그에 대해 순번을 센다.) */
+      /* h4:only-child {
+      color: blue;
+    } */
+      /* 태그가 유일한(하나만 있으면) 타입이면 적용
+    (지정된 태그에 대해서만 순번을 센다.) */
+      /* h4:only-of-type {
+        color: blue;
+      } */
+      /* 텍스트 및 공백을 포함하여 자식 요소가 없는 태그에 적용
+      (단 한문자도 없어야 함) */
+      h4:empty {
+        width: 300px;
+        height: 300px;
+        border: 5px outset gold;
+        box-shadow: 10px 10px 30px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 첫 번째 자식, :first-child와 일치하지만 h4 태그가 아니기 때문에 적용 X -->
+    <!-- <h1>:first-child pseudo class selector </h1> -->
+    <h4></h4>
+    <!-- <h4>H4-1</h4> -->
+    <!-- <h4>H4-2</h4>
+  <h4>H4-3</h4>
+  <h4>H4-4</h4>
+  <h4>H4-5</h4>
+  <h4>H4-6</h4>
+  <h4>H4-7</h4>
+  <h4>H4-8</h4>
+  <h4>H4-9</h4>
+  <h4>H4-10</h4>
+  <h4>H4-11</h4> -->
+  </body>
+</html>
