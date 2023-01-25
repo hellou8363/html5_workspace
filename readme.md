@@ -52,8 +52,23 @@
 \
 2023-01-19 (디렉터리명: day07)
 - CSS 우선순위
+- CSS의 3가지 선택자
 - CSS의 기본 선택자
 - 속성 선택자의 형식
+
+\
+2023-01-20 (디렉터리명: day08)
+- 가상 선택자
+- 이벤트 가상 클래스 선택자
+- 이벤트 가상 클래스 선택자의 종류
+- 구조적 가상 클래스 선택자의 종류
+- UI 요소 상태 가상 클래스 선택자의 종류
+- 기타 가상 클래스 선택자
+- 조합 선택자의 종류
+
+\
+2023-01-25 (디렉터리명: day09)
+
 
 \
 \
@@ -68,5 +83,8 @@ https://docs.emmet.io/abbreviations/syntax/
 **Browser HTML5 Test**  
 http://html5test.com/  
 \
-**W3schhols**  
-https://www.w3schools.com/
+**W3schools**  
+https://www.w3schools.com/  
+\
+**MDN**  
+https://developer.mozilla.org/ko/
