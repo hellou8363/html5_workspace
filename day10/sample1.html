@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sample1</title>
+  <style>
+    body { /* 부모에서 지정한 속성이 자식들에게 상속 된다. */
+      font-weight: bold;
+      font-size: 16pt;
+      font-family: D2Coding;
+    }
+    .mp1 {
+      background-color: aqua;
+      color: red;
+      margin-bottom: 40px;
+      padding-left: 50px;
+    }
+    .mp2 {
+      margin: 20px; /* 상 -> 우 -> 하 -> 좌 순 값 지정 */
+      padding: 10px 20px; /* 상/하 -> 우/좌 순 값 지정 */
+      background-color: silver;
+      color: green;
+    }
+    .mp3 {
+      margin: 50px 15px 20px; /* 상 -> 우/좌 -> 하 순 값 지정 */
+      padding: 20px;
+      background-color: gray;
+      color: purple;
+    }
+    .bt1 {
+      background-color: aqua;
+      color: red;
+      margin-bottom: 15px;
+      padding-left: 50px;
+      border: thick dotted green;
+    }
+    .bt2 {
+      margin: 20px;
+      padding: 5px 10px;
+      border-style: solid;
+      border-width: 1px 3px 5px 3px;
+      border-color: navy red fuchsia black;
+      background-color: silver;
+    }
+    .bt3 {
+      margin: 50px 15px 20px;
+      padding: 20px;
+      border: 5px dashed red;
+      background-color: gray;
+      color: purple;
+    }
+    .bt4 {
+      border-top: 5px solid red;
+      border-bottom: 5px solid red;
+    }
+  </style>
+</head>
+<body style="background-color: lightyellow;">
+  <p>Lorem.</p>
+  <p class="mp1">Lorem, ipsum.</p>
+  <p class="mp2">Lorem, ipsum.</p>
+  <p class="mp3">Lorem, ipsum.</p>
+  <hr>
+  <h2>BorderColor</h2>
+  <p class="bt1">BOX1</p>
+  <p class="bt2">BOX2</p>
+  <p class="bt3">BOX3</p>
+  <p class="bt4">BOX4</p>
+</body>
+</html>

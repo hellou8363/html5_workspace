@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sample3</title>
+  <style>
+    .boxshadow1 {
+      background-color: yellow;
+      border: 5px solid blue;
+      box-shadow: 10px 10px 0px teal;
+    }
+    .boxshadow2 {
+      border: 5px solid red;
+      box-shadow: 20px 20px 0px red;
+      background-color: orange;
+      transition: box-shadow 3s;
+    }
+    .boxshadow2:hover {
+      box-shadow: 20px 20px 50px red;
+    }
+    .boxshadow3 {
+      border: 5px solid black;
+      box-shadow: 20px 20px 30px 0px maroon;
+      background-color: silver;
+      transition: box-shadow 5s ease-in-out;
+    }
+    .boxshadow3:hover {
+      box-shadow: 20px 20px 30px -20px maroon;
+    }
+    .boxshadow4 {
+      border: 5px solid olive;
+      box-shadow: 10px 10px 0px 10px fuchsia;
+      background-color: lime;
+      transition: box-shadow 3s ease-in-out;
+    }
+    .boxshadow4:hover {
+      box-shadow: 10px 10px 0px 10px fuchsia inset;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="boxshadow1">BOX1</h1>
+  <h1 class="boxshadow2">BOX2</h1>
+  <h1 class="boxshadow3">BOX3</h1>
+  <h1 class="boxshadow4">BOX4</h1>
+</body>
+</html>

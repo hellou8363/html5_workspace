@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sample5</title>
+  <style>
+    .sp1 {
+      position: static;
+      /* static은 top, right, bottom, left 위치 속성 적용 X */
+      top: 100px;
+      background-color: cyan;
+      width: 400px;
+      height: 50px;
+    }
+    .sp2 {
+      position: static;
+      left: 30px;
+      width: 400px;
+      height: 50px;
+      background-color: orange;
+    }
+    .sp3 {
+      width: 400px;
+      height: 50px;
+      background-color: lightgreen;
+    }
+    /* 조합 선택자 - 그룹 선택자 */
+    p, div {
+      border: 5px solid purple;
+    }
+    .sp {
+      box-sizing: content-box; 
+      width: 400px;
+      height: 50px;
+      position: static;
+      background-color: cyan;
+    }
+    .rp1 {
+      width: 400px;
+      height: 50px;
+      position: relative;
+      top: -10px;
+      left: 30px;
+      background-color: orange;
+    }
+    .rp2 {
+      width: 400px;
+      height: 50px;
+      position: relative;
+      top: 20px;
+      left: 60px;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>position: static</h1>
+  <p class="sp1">SP1</p>
+  <div class="sp2">SP2</div>
+  <p class="sp3">SP3</p>
+  <hr>
+  <h1>position: relative</h1>
+  <p class="sp">STATIC</p>
+  <div class="rp1">RELATIVE - left: 30px, top: -10px</div>
+  <div class="rp2">RELATIVE - left: 60px, top: 20px</div>
+</body>
+</html>
