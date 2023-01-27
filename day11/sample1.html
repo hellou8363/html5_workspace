@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sample1</title>
+  <style>
+    body {
+      /* 웹브라우저의 viewport 세로영역의 길이를 길게 만들어서
+      세로 스크롤바가 생기도록 임의로 지정 */
+      height: 3000px;
+    }
+    .p {
+      width: 300px;
+      height: 50px;
+      background-color: yellow;
+      border: 3px solid red;
+    }
+    .fp {
+      /* 고정 위치 설정 fixed == absolute + no-scroll */
+      position: fixed;
+      right: 5px;
+      top: 5px;
+      background-color: lightgreen;
+      width: 100px;
+      height: 100px;
+      border: 5px solid purple;
+    }
+    .stk {
+      width: 500px;
+      /* 현재 스크롤바에 기준해서 위치 */
+      position: sticky;
+      /* top 속성만 이용: sticky는 스크롤 바의 움직임을 따라 위에 붙음
+      지정된 위치에서 멈춤(top에서 얼마나 떨어질지) */
+      top: 50px; 
+      border: 1px solid purple;
+      background-color: lightcoral;
+    }
+    .stk2 {
+      width: 300px;
+      position: sticky;
+      top: 200px;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <h1>positioning style</h1>
+  <p class="p">STATIC - 박스1</p>
+  <p class="p">STATIC - 박스2</p>
+  <p class="p">STATIC - 박스3</p>
+  <p class="p">STATIC - 박스4</p>
+  <p class="p">STATIC - 박스5</p>
+  <p class="p">STATIC - 박스6</p>
+  <p class="fp">FIXED - 박스7 장바구니</p>
+  <p class="stk">STICKY - 박스8-1</p>
+  <p class="p">STATIC - 박스1</p>
+  <p class="p">STATIC - 박스2</p>
+  <p class="p">STATIC - 박스3</p>
+  <p class="p">STATIC - 박스4</p>
+  <p class="p">STATIC - 박스5</p>
+  <p class="p">STATIC - 박스6</p>
+  <p class="fp">FIXED - 박스7 장바구니</p>
+  <p class="stk2">STICKY - 박스8-2</p>
+</body>
+</html>

@@ -38,20 +38,33 @@
       background-color: cyan;
     }
     .rp1 {
-      width: 400px;
-      height: 50px;
+      width: 100vw; /* 1vw == 1/100 */
+      height: 100vh;
+      /* width: 400px;
+      height: 50px; */
       position: relative;
-      top: -10px;
-      left: 30px;
+      /* 위치 속성이 0이면, static과 같음 */
+      top: 0px;
+      left: 0px;
       background-color: orange;
+      transition: top 3s ease-in-out, left 3s ease-in-out;
+    }
+    .rp1:hover {
+      top: 50px;
+      left: 100px;
     }
     .rp2 {
       width: 400px;
       height: 50px;
       position: relative;
+      top: 0px;
+      left: 0px;
+      background-color: lightgreen;
+      transition: left 3s, right 3s;
+    }
+    .rp2:hover {
       top: 20px;
       left: 60px;
-      background-color: lightgreen;
     }
   </style>
 </head>

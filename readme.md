@@ -73,6 +73,23 @@
 - 조합 선택자의 종류(실습)
 
 \
+2023-01-26 (디렉터리명: day10)
+- border
+  - border-style
+  - border-width
+  - border-radius
+  - box-shadow
+- Layout 속성
+  - 위치 속성
+  - 웹브라우저의 viewport 영역
+  - position(static, relative, absolute) 실습
+
+\
+2023-01-27 (디렉터리명: day11)
+- position(fixed, sicky) 실습
+- float, clear, overflow
+
+\
 \
 참고자료
 ---  

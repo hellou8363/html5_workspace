@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sample6</title>
+  <style>
+    body {
+      height: 3000px;
+    }
+    div {
+      border: 5px solid purple;
+    }
+    .ap1 {
+      width: 400px;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: yellow;
+      transition: top 3s, left 2s;
+    }
+    .ap1:hover {
+      top: 70px;
+      left: 30px;
+    }
+    .ap2 {
+      width: 400px;
+      height: 50px;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      background-color: lightgreen;
+      transition: top 3s, left 3s;
+    }
+    .ap2:hover {
+      top: 90px;
+      left: 40px;
+    }
+    .rp {
+      width: 400px;
+      height: 50px;
+      position: static;
+      top: 80px;
+      left: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>position: absloute</h1>
+  <div style="position: static;">STATIC 1</div>
+  <div class="ap1">Absolute - left: 30px, top: 70px</div>
+  <div class="ap2">Absolute - left: 40px, top: 90px</div>
+  <div class="rp">Relative - left: 50px, top: 80px</div>
+  <div style="position: static;">STATIC 2</div>
+  <hr>
+  <div id="test" style="position: relative; width: 100px; height: 100px; overflow: hidden;">
+    <div style="position: absolute; width: 200px; height: 200px;"></div>
+  </div>
+</body>
+</html>
